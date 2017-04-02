@@ -1,2 +1,3 @@
-# sample-name-module
-Sample module  for SyDES
+# Sample module for [SyDES](https://github.com/sydes/sydes)
+
+Description will be later
