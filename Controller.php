@@ -1,8 +1,8 @@
 <?php
 namespace Module\SampleName;
 
-use App\AdminMenu;
-use App\Route;
+use Sydes\AdminMenu;
+use Sydes\Route;
 
 class Controller
 {
@@ -46,7 +46,10 @@ class Controller
     {
         // Create tables, if needed
 
-        $menu->addGroup('sample', 'menu_sample', 'star', 120)
+        $menu->addGroup('sample', [
+                'title' => 'menu_sample',
+                'icon' => 'star'
+            ], 120)
             ->addItem('sample/page', [
                 'title' => 'sample_page',
                 'url' => '/admin/sample',
